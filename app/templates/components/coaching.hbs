@@ -1,0 +1,6 @@
+{{yield}}
+
+<BsForm @formLayout="vertical" @model={{this}} @onSubmit={{action "submit"}} as |form|>
+    <form.element @controlType="textarea" @label="Paste Your Release Notes Here" @property="textarea" />
+    <BsButton @defaultText="Submit" @type="primary" @buttonType="submit" />
+</BsForm>

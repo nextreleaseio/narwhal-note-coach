@@ -1,5 +1,26 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+<div class="container">
+    <div class="row align-items-center">
+    <h1 class="display-4">
+        Welcome to <span class="text-primary">Release Note Coach</span>.
+    </h1>
+        <p class="lead text-center text-md-center text-muted mb-6 mb-lg-8">
+            Free online tool to help you create release notes based on best practices, making them readable and pretty.
+        </p>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-12">
+        {{ coaching }}
+      </div>
+    </div>
+    <div>
+        <p class="lead text-center text-md-center text-muted mb-6 mb-lg-8">
+            Like it? Share it!
+        </p>
+        <div class="lead text-center text-md-center text-muted mb-6 mb-lg-8">
+          {{fa-icon 'twitter' prefix="fab" size="3x"}}
+          {{fa-icon 'facebook' prefix="fab" size="3x"}}
+          {{fa-icon 'reddit-alien' prefix="fab" size="3x"}}
+        </div>
+    </div>
+</div>
 {{outlet}}
