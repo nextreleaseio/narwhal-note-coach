@@ -1,9 +1,28 @@
 {{yield}}
-
+<BsAlert
+        @visible={{this.received_success}}
+        @fade={{true}}
+        @type="success"
+        @dismissible={{true}}>
+  <strong> Awesome! </strong> We received your release notes, they're being analyzed and you should receive an email
+  shortly.
+</BsAlert>
+<BsAlert
+        @visible={{this.received_error}}
+        @fade={{true}}
+        @type="danger"
+        @dismissible={{true}}>
+  <strong> Uhh Ohh... </strong> Something went wrong with the submission, we're sorry please try again or contact
+  help@nextrelease.io.
+</BsAlert>
 <BsForm @formLayout="vertical" @model={{this}} @onSubmit={{action "submit"}} as |form|>
-    <form.element @controlType="textarea" @label="Paste Your Release Notes Here" @property="textarea" />
-    <form.element @controlType="email" @label="Send Results To" @placeholder="Email" @property="email" @required={{true}} />
-    <p class="small">Emails are not shared with anyone, they are only used to send results. Required because analysis takes a few minutes to complete.</p>
+  <form.element @controlType="textarea" @label="Paste Your Release Notes Here" @property="textarea"/>
+  <form.element @controlType="email" @label="Send Results To" @placeholder="Email" @property="email"
+                @required={{true}} />
+  <p class="small">
+    Emails are not shared with anyone, they are only used to send results. Required because analysis
+    takes a few minutes to complete.
+  </p>
 
-    <BsButton @defaultText="Submit" @type="primary" @buttonType="submit" />
+  <BsButton @defaultText="Submit" @type="primary" @buttonType="submit"/>
 </BsForm>

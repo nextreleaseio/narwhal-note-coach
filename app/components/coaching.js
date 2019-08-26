@@ -1,6 +1,8 @@
 import Component from '@ember/component';
 
 export default Component.extend({
+  received_success: false,
+  received_error: false,
   actions: {
     submit() {
       $.ajax({
@@ -11,9 +13,9 @@ export default Component.extend({
           markdown: console.log(this.get('textarea')),
         })
       }).then(function (resp) {
-        // handle your server response here
+        this.set('received_success', true);
       }).catch(function (error) {
-        // handle errors here
+        this.set('received_error', true);
       });
     }
   }
