@@ -2,5 +2,8 @@
 
 <BsForm @formLayout="vertical" @model={{this}} @onSubmit={{action "submit"}} as |form|>
     <form.element @controlType="textarea" @label="Paste Your Release Notes Here" @property="textarea" />
+    <form.element @controlType="email" @label="Send Results To" @placeholder="Email" @property="email" @required={{true}} />
+    <p class="small">Emails are not shared with anyone, they are only used to send results. Required because analysis takes a few minutes to complete.</p>
+
     <BsButton @defaultText="Submit" @type="primary" @buttonType="submit" />
 </BsForm>
