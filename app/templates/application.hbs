@@ -1,61 +1,59 @@
 <div class="container">
-    <div class="row align-items-center">
+  <div class="row align-items-center">
     <h1 class="display-4">
-        Welcome to <span class="text-primary">Release Note Coach</span>.
+      Welcome to <span class="text-primary">Release Note Coach</span>.
     </h1>
-        <p class="lead text-center text-md-center text-muted mb-6 mb-lg-8">
-            Free online tool to help you create release notes based on best practices, making them readable and pretty.
-        </p>
+    <p class="lead text-center text-md-center text-muted mb-6 mb-lg-8">
+      Free online tool to help you create release notes based on best practices, making them readable and pretty.
+    </p>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-12">
+      {{ alert }}
     </div>
-    <div class="row align-items-center">
-        <div class="col-12">
-            {{ alert }}
-        </div>
-      <div class="col-12">
-        {{ coaching }}
-      </div>
+    <div class="col-12">
+      {{ coaching }}
     </div>
-    <div class="row align-items-center">
-        <div class="col-md-4 col-sm-12">
-          <p>
-            Supported Release Note Formats
-          </p>
-            <ul>
-                <li><a href="https://github.com/nextreleaseio/narwhal-note-coach/blob/master/docs/supported_formats/bullet_list.md">Bullet List</a></li>
-                <li><a href="https://github.com/nextreleaseio/narwhal-note-coach/blob/master/docs/supported_formats/line_category.md">Line Based Categorization</a></li>
-                <li><a href="https://github.com/nextreleaseio/narwhal-note-coach/blob/master/docs/supported_formats/section_categories.md">Section Based Categorization</a></li>
-            </ul>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <p>
-                Coaching Based on Best Practices
-            </p>
-            <ul>
-                <li><a href="https://keepachangelog.com/en/1.0.0/">Keep A Changelog</a></li>
-                <li><a href="https://slackhq.com/a-little-thing-about-release-notes">Slack: A Little Thing About Release Notes</a></li>
-                <li><a href="https://semver.org/">Semantic Versioning</a></li>
-            </ul>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <p>
-                Automatic Feedback on All Your Releases
-            </p>
-            <ul>
-                <li><a href="https://github.com/marketplace/nextrelease-io">GitHub Marketplace: Next Release</a></li>
-                <li><a href="https://www.nextrelease.io/">NextRelease.io</a></li>
-            </ul>
-            <br />
-        </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-md-4 col-sm-12">
+      <p>
+        Supported Release Note Formats
+      </p>
+      <ul>
+        <li><a href="https://github.com/nextreleaseio/narwhal-note-coach/blob/master/docs/supported_formats/bullet_list.md">Bullet List</a></li>
+        <li><a href="https://github.com/nextreleaseio/narwhal-note-coach/blob/master/docs/supported_formats/line_category.md">Line Based Categorization</a></li>
+        <li><a href="https://github.com/nextreleaseio/narwhal-note-coach/blob/master/docs/supported_formats/section_categories.md">Section Based Categorization</a></li>
+      </ul>
     </div>
-    <div>
-        <p class="lead text-center text-md-center text-muted mb-6 mb-lg-8">
-            Like it? Share it!
-        </p>
-        <div class="lead text-center text-md-center text-muted mb-6 mb-lg-8">
-          {{fa-icon 'twitter' prefix="fab" size="3x"}}
-          {{fa-icon 'facebook' prefix="fab" size="3x"}}
-          {{fa-icon 'reddit-alien' prefix="fab" size="3x"}}
-        </div>
+    <div class="col-md-4 col-sm-12">
+      <p>
+        Coaching Based on Best Practices
+      </p>
+      <ul>
+        <li><a href="https://keepachangelog.com/en/1.0.0/">Keep A Changelog</a></li>
+        <li><a href="https://slackhq.com/a-little-thing-about-release-notes">Slack: A Little Thing About Release Notes</a></li>
+        <li><a href="https://semver.org/">Semantic Versioning</a></li>
+      </ul>
     </div>
+    <div class="col-md-4 col-sm-12">
+      <p>
+        Automatic Feedback on All Your Releases
+      </p>
+      <ul>
+        <li><a href="https://github.com/marketplace/nextrelease-io">GitHub Marketplace: Next Release</a></li>
+        <li><a href="https://www.nextrelease.io/">NextRelease.io</a></li>
+      </ul>
+      <br \>
+    </div>
+  </div>
+  <div>
+    <p class="lead text-center text-md-center text-muted mb-6 mb-lg-8">
+      Like it? Share it!
+    </p>
+    <div class="lead text-center text-md-center text-muted mb-6 mb-lg-8">
+      <a href="https://twitter.com/intent/tweet?text=Just+stepped+up+my+release+note+game+with+the+notes+coach%21+Check+it+out+at+https%3A%2F%2Fnextrelease.io%2Fcoach">{{fa-icon "twitter" prefix="fab" size="3x"}}</a>
+    </div>
+  </div>
 </div>
 {{outlet}}
