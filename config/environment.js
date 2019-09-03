@@ -16,6 +16,16 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-inline'",
+      'connect-src':
+        "'self' https://*.nextrelease.io https://*.herokuapp.com http://localhost:* https://app.getsentry.com",
+      'default-src': "'none'",
+      'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com",
+      'font-src': "'self' fonts.gstatic.com",
+      'img-src': "'self' *.gravatar.com *.wp.com data:",
+      'media-src': "'self'"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
