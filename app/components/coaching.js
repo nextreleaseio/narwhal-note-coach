@@ -7,7 +7,7 @@ export default Component.extend({
     submit() {
       $.ajax({
         type: "POST",
-        url: "https://api.nextrelease.io/release-coach/",
+        url: "https://api.nextrelease.io/app/release-coach/",
         data: JSON.stringify({
           email: console.log(this.get('email')),
           markdown: console.log(this.get('textarea')),
