@@ -6,6 +6,10 @@ export default Component.extend({
   actions: {
     submit() {
       $.ajax({
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
         type: "POST",
         url: "https://api.nextrelease.io/app/release-coach/",
         data: JSON.stringify({
