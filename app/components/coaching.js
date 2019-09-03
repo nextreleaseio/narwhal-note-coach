@@ -12,7 +12,7 @@ export default Component.extend({
         },
         type: "POST",
         url: "https://api.nextrelease.io/app/release-coach/",
-        body: JSON.stringify({
+        data: JSON.stringify({
           email: console.log(this.get('email')),
           markdown: console.log(this.get('textarea')),
         })
