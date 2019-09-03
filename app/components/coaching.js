@@ -1,5 +1,4 @@
 import Component from '@ember/component';
-import requireModule from 'ember-require-module';
 
 export default Component.extend({
   received_success: false,
