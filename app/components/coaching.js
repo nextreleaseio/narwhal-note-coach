@@ -12,13 +12,15 @@ export default Component.extend({
         },
         type: "POST",
         url: "https://api.nextrelease.io/app/release-coach/",
-        body: JSON.stringify({
-          email: console.log(this.get('email')),
-          markdown: console.log(this.get('textarea')),
+        dataType:'json',
+        data: JSON.stringify({
+          email: this.get('email'),
+          markdown: this.get('textarea'),
         })
       }).then(function (resp) {
         this.set('received_success', true);
       }).catch(function (error) {
+        console.log(error);
         this.set('received_error', true);
       });
     }
