@@ -1,4 +1,4 @@
-# Narwhal Note Coach
+# Narwhal Note Coach Demo
 The personal trainer for your release notes. Helping you to improve the readability and style of your notes.
 
 **This is a work in progress :), feel free to let us know what types of things
